@@ -40,10 +40,10 @@ def calculate_age(dataset):
 
 def send_via_mail(entry_dict):
     try:
-        sender = 'whatsapp.autopilot1@googlemail.com'
-        receiver = 'robertvater1@googlemail.com'
+        sender = 'whatsapp.au******@googlemail.com'
+        receiver = 'ro******1@googlemail.com'
         s = smtplib.SMTP_SSL(host='smtp.gmail.com', port=465)
-        s.login(user=sender, password='wXHf7hwYhrTreuOW5j99')
+        s.login(user=sender, password='******')
         rv_age = calculate_age(entry_dict)
         body_of_the_email = "Wird heute {} Jahre alt. Handnummer: {}, Status: {}".format(rv_age,
                                                                                             entry_dict["handynummer"],
